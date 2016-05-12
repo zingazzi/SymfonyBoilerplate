@@ -1,0 +1,24 @@
+{
+  "name": "lafenice",
+  "dependencies": {
+    "modernizr": "latest",
+    "jquery": "latest",
+    "jquery-ui": "latest",
+    "fontawesome": "latest",
+    "fontawesome": "latest",
+    "owl.carousel": "latest",
+    "slicknav": "latest",
+    "fancybox": "latest",
+    "summernote": "latest",
+    "jquery-viewport-checker": "latest",
+    "mdi": "latest",
+    "flat-ui": "latest",
+    "bootbox": "latest",
+    "x-editable": "latest",
+    "moment": "latest",
+    "eonasdan-bootstrap-datetimepicker": "latest",
+    "Chart.js": "latest",
+    "animate.css": "latest",
+    "history.js": "latest"
+  }
+}

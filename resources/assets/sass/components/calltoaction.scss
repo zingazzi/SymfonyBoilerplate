@@ -1,0 +1,12 @@
+.Call-to-action {
+  padding-top: 20px; display: inline-block; font-size: 14px;
+  a { 
+    padding: 8px 15px; color:$white; border:1px solid darken($blue-light, 5); @include gradient(darken($blue-light, 10), $blue-light); text-transform: uppercase; border-radius: 5px; 
+    &:hover { background: darken($blue-light, 15); }
+  }
+
+ &.Call-to-action--center { text-align: center; }
+ &.Call-to-action--left { text-align: left; }
+ &.Call-to-action--right { text-align: right; }
+
+}

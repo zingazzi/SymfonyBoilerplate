@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ page.title }}</h1>
+    {{ page.description | raw }}
+    <p>is_active: {{ page.active }}</p>
+    <h4><a href="/category/{{ category.id }}">{{ category.title }}</a></h4>
+    <img src="{{ image('img/' ~ page.photo).resize(200,100) }}" />
+{% endblock %}

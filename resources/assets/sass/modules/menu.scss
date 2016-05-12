@@ -1,0 +1,23 @@
+#Menu {
+	position: relative;
+	li { display: inline-block; 
+		a { padding: 10px 3px 12px 3px; margin: 0px 6px; color:$black; }
+		&.active a, { color: $blue-light; background: url(../../img/freccia.png) bottom left no-repeat; }
+		a:hover {
+			color: $blue-light;
+		}
+		&.active ul li a { color:$white; } 
+
+			&:hover ul { display:block; }
+			ul {
+				position:absolute; top:40px; width: 250px; background:$blue-light; display:none;
+				li {  
+					display:block; text-align: left;
+					a { 
+						display:block; padding: 5px; background:$blue-light; color: $white;
+					}
+					&.active a, a:hover { background:$grey-dark; color:$white; }
+				}
+			}
+	}
+}

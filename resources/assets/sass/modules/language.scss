@@ -1,0 +1,6 @@
+.Language {
+	.Language__item {
+		color:$blue-light;
+		&.Language--active { color:$black; }
+	}
+}

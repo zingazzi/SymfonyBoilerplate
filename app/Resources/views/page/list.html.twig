@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<h4>
+	<a href="/category" {% if id == 0 %}class='active'{% endif %}>all</a> 
+	{% for cat in categories %}
+	    | <a href="/category/{{ cat.id }}" {% if id == cat.id %}class='active'{% endif %}>{{ cat.title }}</a> 	
+	{% endfor %}
+	</h4>
+
+    {% for page in category %}
+        <h2><a href="/page/{{ page.id }}">{{ page.title }}</a></h2>
+        <h4>{{ page.category.title }}</h4>
+    {% endfor %}
+	
+
+{% endblock %}

@@ -1,0 +1,57 @@
+.row { @include row(); margin: 5px 0px; }
+.content { @include outer-container($content-width); }
+
+.col-twelve { @include span-columns(12 of 12); }
+.col-eleven { @include span-columns(11 of 12); }
+.col-ten { @include span-columns(10 of 12); }
+.col-nine { @include span-columns(9 of 12 ); }
+.col-eight { @include span-columns(8 of 12 ); }
+.col-seven { @include span-columns(7 of 12 ); }
+.col-six { @include span-columns(6 of 12 ); }
+.col-five { @include span-columns(5 of 12 ); }
+.col-four { @include span-columns(4 of 12 ); }
+.col-tree { @include span-columns(3 of 12 ); }
+.col-two { @include span-columns(2 of 12 ); }
+.col-one { @include span-columns(1 of 12 ); }
+.col-none { display:none; }
+
+.col-twelve, .col-eleven, .col-ten, .col-nine, .col-eight, .col-seven, .col-six, .col-five, .col-four, .col-tree, .col-two, .col-one { min-height: 1px; }
+
+@media screen and (max-width: $pad) {
+	.col-twelve, .col-eleven, .col-ten, .col-nine, .col-eight, .col-seven, .col-six, .col-five, .col-four, .col-tree, .col-two, .col-one { @include span-columns(12 of 12);  }
+
+	.col-twelve, .col-eleven, .col-ten, .col-nine, .col-eight, .col-seven, .col-six, .col-five, .col-four, .col-tree, .col-two, .col-one { padding-left:10px;  padding-right:10px;  }
+
+	.col-pad-twelve { @include span-columns(12 of 12); }
+	.col-pad-eleven { @include span-columns(11 of 12); }
+	.col-pad-ten { @include span-columns(10 of 12); }
+	.col-pad-nine { @include span-columns(9 of 12 ); }
+	.col-pad-eight { @include span-columns(8 of 12 ); }
+	.col-pad-seven { @include span-columns(7 of 12 ); }
+	.col-pad-six { @include span-columns(6 of 12 ); }
+	.col-pad-five { @include span-columns(5 of 12 ); }
+	.col-pad-four { @include span-columns(4 of 12 ); }
+	.col-pad-tree { @include span-columns(3 of 12 ); }
+	.col-pad-two { @include span-columns(2 of 12 ); }
+	.col-pad-one { @include span-columns(1 of 12 ); }
+	.col-pad-none { display:none; }
+}
+
+@media screen and (max-width: $mobile) {
+
+	.col-pad-twelve, .col-pad-eleven, .col-pad-ten, .col-pad-nine, .col-pad-eight, .col-pad-seven, .col-pad-six, .col-pad-five, .col-pad-four, .col-pad-tree, .col-pad-two, .col-pad-one { @include span-columns(12 of 12);  }
+
+	.col-mobile-twelve { @include span-columns(12 of 12); }
+	.col-mobile-eleven { @include span-columns(11 of 12); }
+	.col-mobile-ten { @include span-columns(10 of 12); }
+	.col-mobile-nine { @include span-columns(9 of 12 ); }
+	.col-mobile-eight { @include span-columns(8 of 12 ); }
+	.col-mobile-seven { @include span-columns(7 of 12 ); }
+	.col-mobile-six { @include span-columns(6 of 12 ); }
+	.col-mobile-five { @include span-columns(5 of 12 ); }
+	.col-mobile-four { @include span-columns(4 of 12 ); }
+	.col-mobile-tree { @include span-columns(3 of 12 ); }
+	.col-mobile-two { @include span-columns(2 of 12 ); }
+	.col-mobile-one { @include span-columns(1 of 12 ); }
+	.col-mobile-none { display:none; }
+}

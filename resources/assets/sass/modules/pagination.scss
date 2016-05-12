@@ -1,0 +1,8 @@
+.pagination {
+	padding: 10px 0px; margin: 20px 0px 10px 0px; position: relative; overflow:hidden;
+	border-top:1px solid lighten($grey-light, 10); text-align: center;
+	li { display: inline-block; list-style: none; padding: 3px; margin: 0px 3px; 
+		a { color:$black; }
+		&.active a, a:hover, &.disabled, &.active { color: $blue-light; }
+	}
+}

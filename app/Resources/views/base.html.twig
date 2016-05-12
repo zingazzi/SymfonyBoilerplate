@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="{{ asset('app.css'|asset_version) }}"/>
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}{% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    </head>
+    <body>
+
+        {% block body %}{% endblock %}
+AAA
+        <i class="mdi mdi-facebook"></i>
+BBB
+        <script src="{{ asset('app.js'|asset_version) }}"/></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

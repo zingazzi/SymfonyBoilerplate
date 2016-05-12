@@ -1,0 +1,37 @@
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+.align-justify { text-align: justify; }
+
+h1, h2, h3, h4, h5, p, ul ,li { font-family: $font; }
+
+h1 { font-size: 30px; line-height: 33px; }
+h2 { font-size: 27px; line-height: 30px; }
+h3 { font-size: 24px; line-height: 37px; }
+h4 { font-size: 20px; line-height: 23px; }
+h5 { font-size: 18px; line-height: 21px; }
+h6 { font-size: 17px; line-height: 20px; }
+
+ol, ul { padding: 0.5em 0px; }
+ul.default, ol.default, ol, ul { li { list-style-position: inside; } }
+ul.default, ul { list-style-type: circle; }
+ol.default, ol { list-style-type: upper-roman; }
+
+p, li { font-size: 14px; line-height: 20px; color:$black; }
+
+ul.List--coloumn {
+	list-style: none; columns: 2; -webkit-columns: 2; -moz-columns: 2;
+    i { color:$blue-light; }
+}
+
+@media screen and (max-width: $pad) {
+	ul.List--coloumn {
+		columns: 2; -webkit-columns: 2;-moz-columns: 2;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	ul.List--coloumn {
+		columns: 1; -webkit-columns: 1;-moz-columns: 1;
+	}
+}
